@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajeet Ojha - Graphic Designer & Video Editor</title>
+  <meta name="description" content="Ajeet Ojha - Graphic Designer & Video Editor. Brand design, video editing, motion graphics and social content.">
+  <meta name="keywords" content="Ajeet Ojha, graphic designer, video editor, motion graphics, social media design, branding, portfolio">
+  <meta name="author" content="Ajeet Ojha">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#050505">
+  <link rel="canonical" href="https://example.com/">
+
+  <meta property="og:title" content="Ajeet Ojha - Graphic Designer & Video Editor">
+  <meta property="og:description" content="A creative portfolio for graphic design, video editing, motion graphics and social content.">
+  <meta property="og:image" content="https://example.com/assets/images/og-placeholder.svg">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ajeet Ojha - Graphic Designer & Video Editor">
+  <meta name="twitter:description" content="A creative portfolio for graphic design, video editing, motion graphics and social content.">
+  <meta name="twitter:image" content="https://example.com/assets/images/og-placeholder.svg">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-obsidian text-white font-body antialiased overflow-x-hidden">
+  <a href="#mainContent" class="skip-link">Skip to content</a>
+
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"><span>VIEW</span></div>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-40 border-b border-white/5 backdrop-blur-md bg-obsidian/60 transition-colors duration-300">
+    <div class="mx-auto max-w-[1600px] px-6 md:px-10 h-20 flex items-center justify-between">
+      <a href="#home" class="flex flex-col leading-none group cursor-hover" aria-label="Ajeet Ojha home">
+        <span class="font-display font-medium text-lg md:text-xl tracking-tight text-white group-hover:text-acid transition-colors">AJEET OJHA</span>
+        <span class="font-mono text-[10px] md:text-[11px] tracking-[0.2em] text-silver uppercase mt-1">Graphic Designer / Video Editor</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-10 font-mono text-xs uppercase tracking-[0.15em] text-silver" aria-label="Primary navigation">
+        <a href="#home" class="nav-link cursor-hover hover:text-white transition-colors">Home</a>
+        <a href="#work" class="nav-link cursor-hover hover:text-white transition-colors">Work</a>
+        <a href="#services" class="nav-link cursor-hover hover:text-white transition-colors">Services</a>
+        <a href="#about" class="nav-link cursor-hover hover:text-white transition-colors">About</a>
+        <a href="#contact" class="nav-link cursor-hover hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <a href="#contact" class="cursor-hover hidden lg:inline-flex btn-glow items-center gap-2 border border-acid text-acid text-xs font-mono uppercase tracking-[0.15em] px-5 py-3 rounded-full hover:bg-acid hover:text-obsidian transition-colors duration-300">
+        Let's Work Together
+      </a>
+
+      <button id="menuToggle" type="button" class="lg:hidden text-white cursor-hover" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <i data-lucide="menu" class="w-6 h-6" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class="fixed inset-0 z-50 bg-obsidian translate-x-full transition-transform duration-500 ease-in-out lg:hidden" aria-hidden="true">
+    <div class="flex items-center justify-between px-6 h-20 border-b border-white/5">
+      <span class="font-mono text-xs uppercase tracking-[0.2em] text-silver">Menu</span>
+      <button id="menuClose" type="button" aria-label="Close menu" class="text-white cursor-hover">
+        <i data-lucide="x" class="w-6 h-6" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav class="flex flex-col justify-center gap-6 px-8 h-[calc(100%-5rem)] font-display font-medium text-4xl" aria-label="Mobile navigation">
+      <a href="#home" class="mobile-link text-white hover:text-acid transition-colors">Home</a>
+      <a href="#work" class="mobile-link text-white hover:text-acid transition-colors">Work</a>
+      <a href="#services" class="mobile-link text-white hover:text-acid transition-colors">Services</a>
+      <a href="#about" class="mobile-link text-white hover:text-acid transition-colors">About</a>
+      <a href="#contact" class="mobile-link text-white hover:text-acid transition-colors">Contact</a>
+      <a href="#contact" class="mobile-link mt-4 inline-flex w-fit items-center gap-2 border border-acid text-acid text-sm font-mono uppercase tracking-[0.15em] px-6 py-4 rounded-full">Let's Work Together</a>
+    </nav>
+  </div>
+
+  <main id="mainContent">
+    <section id="home" class="relative pt-36 pb-20 md:pt-48 md:pb-28 px-6 md:px-10">
+      <div class="mx-auto max-w-[1600px]">
+        <div class="reveal flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-silver mb-8">
+          <span class="relative flex h-2 w-2" aria-hidden="true">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-acid opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-acid"></span>
+          </span>
+          Open for freelance projects &mdash; 2026
+        </div>
+
+        <h1 class="reveal font-display font-medium text-white leading-[0.95] text-[clamp(2.75rem,9vw,7.5rem)] tracking-tight max-w-6xl">
+          I DESIGN <span class="text-acid">VISUALS</span> THAT<br class="hidden md:block">
+          GET ATTENTION.
+        </h1>
+
+        <p class="reveal mt-8 max-w-xl text-silver text-base md:text-lg leading-relaxed">
+          Graphic design, video editing, motion graphics and social content &mdash; built to stop the scroll, hold attention, and move a brand forward.
+        </p>
+
+        <div class="reveal mt-10 flex flex-wrap items-center gap-4">
+          <a href="#work" class="cursor-hover btn-glow inline-flex items-center gap-2 bg-acid text-obsidian font-mono text-xs font-medium uppercase tracking-[0.15em] px-7 py-4 rounded-full hover:opacity-90 transition-opacity">
+            View My Work <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i>
+          </a>
+          <a href="#contact" class="cursor-hover inline-flex items-center gap-2 border border-white/30 text-white font-mono text-xs uppercase tracking-[0.15em] px-7 py-4 rounded-full hover:border-white hover:bg-white/5 transition-colors">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal mx-auto max-w-[1600px] mt-20 md:mt-28">
+        <div class="flex items-end justify-between mb-4 px-1">
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-silver">Showreel &mdash; 2026</span>
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-silver hidden sm:inline">Full Reel</span>
+        </div>
+        <div id="showreelFrame" class="cursor-hover relative aspect-[21/9] rounded-2xl overflow-hidden card-hairline placeholder-frame group" data-placeholder="PLACEHOLDER_SHOWREEL"></div>
+      </div>
+    </section>
+
+    <div class="border-y border-white/10 bg-matte overflow-hidden py-4 marquee-mask" aria-label="Creative services ticker">
+      <div class="flex w-max">
+        <div class="marquee-track flex items-center gap-8 pr-8 font-mono text-sm md:text-base uppercase tracking-[0.2em] text-silver whitespace-nowrap">
+          <span>Graphic Design</span><span class="text-acid">&bull;</span>
+          <span>Video Editing</span><span class="text-acid">&bull;</span>
+          <span>Motion</span><span class="text-acid">&bull;</span>
+          <span>Social Media</span><span class="text-acid">&bull;</span>
+          <span>Brand Content</span><span class="text-acid">&bull;</span>
+        </div>
+        <div class="marquee-track flex items-center gap-8 pr-8 font-mono text-sm md:text-base uppercase tracking-[0.2em] text-silver whitespace-nowrap" aria-hidden="true">
+          <span>Graphic Design</span><span class="text-acid">&bull;</span>
+          <span>Video Editing</span><span class="text-acid">&bull;</span>
+          <span>Motion</span><span class="text-acid">&bull;</span>
+          <span>Social Media</span><span class="text-acid">&bull;</span>
+          <span>Brand Content</span><span class="text-acid">&bull;</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="px-6 md:px-10 py-24 md:py-36 border-b border-white/5">
+      <div class="mx-auto max-w-[1600px] grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+        <h2 class="reveal font-display font-medium text-white leading-[0.95] text-[clamp(2.25rem,6vw,5rem)] tracking-tight">
+          I MAKE IDEAS<br>LOOK GOOD.
+        </h2>
+        <div class="reveal flex flex-col gap-8">
+          <p class="text-silver text-base md:text-lg leading-relaxed max-w-lg">
+            Every project starts with the same question &mdash; what does this idea look like when it's impossible to scroll past? I work across static design and moving image to find that answer, shaping color, type and motion into visuals that carry a story from first glance to final frame.
+          </p>
+          <div data-placeholder="PLACEHOLDER_INTRO_PHOTO" class="relative aspect-[4/5] max-w-sm rounded-xl overflow-hidden placeholder-frame flex items-center justify-center">
+            <span class="font-mono text-xs uppercase tracking-[0.25em] text-silver">Your Photo Here</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="px-6 md:px-10 py-24 md:py-32 border-b border-white/5">
+      <div class="mx-auto max-w-[1600px]">
+        <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-[0.25em] text-acid">Portfolio</span>
+            <h2 class="font-display font-medium text-white leading-[0.95] text-[clamp(2.25rem,5vw,4.25rem)] tracking-tight mt-3">SELECTED WORK</h2>
+            <p class="text-silver mt-4 max-w-md">A mix of design and motion, sorted by craft &mdash; not chronology.</p>
+          </div>
+
+          <div class="flex flex-wrap gap-2" id="filterGroup" aria-label="Project filters">
+            <button type="button" data-filter="all" aria-pressed="true" class="filter-btn cursor-hover active px-4 py-2 rounded-full border font-mono text-[11px] uppercase tracking-[0.15em] transition-colors">All</button>
+            <button type="button" data-filter="graphic-design" aria-pressed="false" class="filter-btn cursor-hover px-4 py-2 rounded-full border font-mono text-[11px] uppercase tracking-[0.15em] transition-colors">Graphic Design</button>
+            <button type="button" data-filter="video-editing" aria-pressed="false" class="filter-btn cursor-hover px-4 py-2 rounded-full border font-mono text-[11px] uppercase tracking-[0.15em] transition-colors">Video Editing</button>
+            <button type="button" data-filter="social-media" aria-pressed="false" class="filter-btn cursor-hover px-4 py-2 rounded-full border font-mono text-[11px] uppercase tracking-[0.15em] transition-colors">Social Media</button>
+            <button type="button" data-filter="branding" aria-pressed="false" class="filter-btn cursor-hover px-4 py-2 rounded-full border font-mono text-[11px] uppercase tracking-[0.15em] transition-colors">Branding</button>
+            <button type="button" data-filter="motion" aria-pressed="false" class="filter-btn cursor-hover px-4 py-2 rounded-full border font-mono text-[11px] uppercase tracking-[0.15em] transition-colors">Motion</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-6 md:auto-rows-[200px] gap-4 grid-flow-row-dense" id="projectGrid"></div>
+        <p id="projectEmptyState" class="hidden mt-8 font-mono text-xs uppercase tracking-[0.15em] text-silver" aria-live="polite">No projects in this category yet.</p>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-10 py-24 md:py-32 border-b border-white/5 bg-matte/40">
+      <div class="mx-auto max-w-[1600px]">
+        <div class="reveal mb-14">
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-acid">Motion Work</span>
+          <h2 class="font-display font-medium text-white leading-[0.95] text-[clamp(2.25rem,5vw,4.25rem)] tracking-tight mt-3">CUT. FRAME. STORY.</h2>
+          <p class="text-silver mt-4 max-w-md">Selected edits &mdash; from color grade to final cut.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6" id="videoShowcase"></div>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-10 py-24 md:py-32 border-b border-white/5">
+      <div class="mx-auto max-w-[1600px]">
+        <div class="reveal mb-14">
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-acid">Static Design</span>
+          <h2 class="font-display font-medium text-white leading-[0.95] text-[clamp(2.25rem,5vw,4.25rem)] tracking-tight mt-3">VISUAL DESIGN</h2>
+          <p class="text-silver mt-4 max-w-md">Social templates, posters, thumbnails and banners.</p>
+        </div>
+        <div class="columns-2 md:columns-3 gap-4 [column-fill:balance]" id="masonryGrid"></div>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-10 py-24 md:py-32 border-b border-white/5 bg-matte/40">
+      <div class="mx-auto max-w-[1600px]">
+        <div class="reveal mb-14">
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-acid">Case Study</span>
+          <h2 class="font-display font-medium text-white leading-[0.95] text-[clamp(2.25rem,5vw,4.25rem)] tracking-tight mt-3">FROM IDEA TO FINAL FRAME</h2>
+          <p class="text-silver mt-4 max-w-md">A reusable breakdown of how a project moves from brief to delivery &mdash; duplicate this block for each case study.</p>
+        </div>
+
+        <div class="reveal card-hairline rounded-2xl p-6 md:p-12 bg-matte">
+          <div class="grid md:grid-cols-3 gap-y-8 gap-x-10 border-b border-white/10 pb-10 mb-10">
+            <div>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-acid">Project</span>
+              <p class="text-white mt-2">[PROJECT NAME]</p>
+            </div>
+            <div>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-acid">Client / Brand</span>
+              <p class="text-white mt-2">[CLIENT / BRAND NAME]</p>
+            </div>
+            <div>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-acid">My Role</span>
+              <p class="text-white mt-2">[e.g. Lead Designer, Video Editor]</p>
+            </div>
+            <div class="md:col-span-2">
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-acid">Objective</span>
+              <p class="text-silver mt-2 leading-relaxed">[Describe the goal of this project and the problem it needed to solve]</p>
+            </div>
+            <div>
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-acid">Tools</span>
+              <p class="text-silver mt-2">[e.g. Photoshop, Premiere Pro, After Effects]</p>
+            </div>
+            <div class="md:col-span-3">
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-acid">Process</span>
+              <p class="text-silver mt-2 leading-relaxed">[Outline the steps taken from brief to delivery &mdash; research, concept, production, revisions]</p>
+            </div>
+            <div class="md:col-span-3">
+              <span class="font-mono text-[10px] uppercase tracking-[0.2em] text-acid">Final Result</span>
+              <p class="text-silver mt-2 leading-relaxed">[Describe the outcome and impact of the finished work]</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div data-placeholder="PLACEHOLDER_CASE_STUDY_BEFORE_IMAGE" class="relative aspect-video rounded-xl placeholder-frame flex items-start p-4">
+              <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-silver bg-obsidian/70 border border-white/10 rounded-full px-3 py-1">Before</span>
+            </div>
+            <div data-placeholder="PLACEHOLDER_CASE_STUDY_AFTER_IMAGE" class="relative aspect-video rounded-xl placeholder-frame flex items-start p-4">
+              <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-acid bg-obsidian/70 border border-acid/30 rounded-full px-3 py-1">After</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="px-6 md:px-10 py-24 md:py-32 border-b border-white/5">
+      <div class="mx-auto max-w-[1600px]">
+        <div class="reveal mb-14">
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-acid">What I Do</span>
+          <h2 class="font-display font-medium text-white leading-[0.95] text-[clamp(2.25rem,5vw,4.25rem)] tracking-tight mt-3">SERVICES</h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
+          <div class="reveal bg-obsidian p-8 hover:bg-matte transition-colors duration-300 group">
+            <span class="font-mono text-[11px] text-silver">A</span>
+            <h3 class="font-display text-2xl text-white mt-6 group-hover:text-acid transition-colors">Graphic Design</h3>
+            <p class="text-silver text-sm leading-relaxed mt-4">Brand visuals, social templates, posters and print-ready design that keep a consistent identity across every touchpoint.</p>
+            <ul class="mt-6 space-y-2 font-mono text-[11px] uppercase tracking-[0.1em] text-silver">
+              <li>- Social media templates</li>
+              <li>- Brand identity assets</li>
+              <li>- Print & digital collateral</li>
+            </ul>
+          </div>
+
+          <div class="reveal bg-obsidian p-8 hover:bg-matte transition-colors duration-300 group">
+            <span class="font-mono text-[11px] text-silver">B</span>
+            <h3 class="font-display text-2xl text-white mt-6 group-hover:text-acid transition-colors">Video Editing</h3>
+            <p class="text-silver text-sm leading-relaxed mt-4">Raw footage cut into a clean, paced story &mdash; trimmed, graded and synced to sit right the first time.</p>
+            <ul class="mt-6 space-y-2 font-mono text-[11px] uppercase tracking-[0.1em] text-silver">
+              <li>- Narrative & promo edits</li>
+              <li>- Color grading</li>
+              <li>- Sound design & sync</li>
+            </ul>
+          </div>
+
+          <div class="reveal bg-obsidian p-8 hover:bg-matte transition-colors duration-300 group">
+            <span class="font-mono text-[11px] text-silver">C</span>
+            <h3 class="font-display text-2xl text-white mt-6 group-hover:text-acid transition-colors">Social Media Content</h3>
+            <p class="text-silver text-sm leading-relaxed mt-4">Scroll-stopping content built for the feed &mdash; sized, captioned and sequenced for how people actually watch.</p>
+            <ul class="mt-6 space-y-2 font-mono text-[11px] uppercase tracking-[0.1em] text-silver">
+              <li>- Reels & short-form video</li>
+              <li>- Carousel & static posts</li>
+              <li>- Content calendars</li>
+            </ul>
+          </div>
+
+          <div class="reveal bg-obsidian p-8 hover:bg-matte transition-colors duration-300 group">
+            <span class="font-mono text-[11px] text-silver">D</span>
+            <h3 class="font-display text-2xl text-white mt-6 group-hover:text-acid transition-colors">Motion & Visual Content</h3>
+            <p class="text-silver text-sm leading-relaxed mt-4">Type and graphics that move &mdash; animated logos, kinetic text and motion graphics that add polish without noise.</p>
+            <ul class="mt-6 space-y-2 font-mono text-[11px] uppercase tracking-[0.1em] text-silver">
+              <li>- Kinetic typography</li>
+              <li>- Animated logos & lower-thirds</li>
+              <li>- Explainer motion graphics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 border-b border-white/5 overflow-hidden bg-matte/40">
+      <div class="marquee-mask overflow-hidden">
+        <div class="flex w-max">
+          <div class="marquee-track-slow flex items-center gap-10 pr-10 whitespace-nowrap">
+            <span class="font-display stroke-text text-5xl md:text-7xl">Photoshop</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">Illustrator</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">Premiere Pro</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">DaVinci Resolve</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">After Effects</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">Figma</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">Lightroom</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">InDesign</span>
+          </div>
+          <div class="marquee-track-slow flex items-center gap-10 pr-10 whitespace-nowrap" aria-hidden="true">
+            <span class="font-display stroke-text text-5xl md:text-7xl">Photoshop</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">Illustrator</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">Premiere Pro</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">DaVinci Resolve</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">After Effects</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">Figma</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">Lightroom</span>
+            <span class="font-display stroke-text text-5xl md:text-7xl">InDesign</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee-mask overflow-hidden mt-8">
+        <div class="flex w-max">
+          <div class="marquee-track-reverse flex items-center gap-6 pr-6 whitespace-nowrap font-mono text-xs md:text-sm uppercase tracking-[0.2em] text-silver">
+            <span>Color Grading</span><span class="text-acid">/</span>
+            <span>Typography</span><span class="text-acid">/</span>
+            <span>Motion Graphics</span><span class="text-acid">/</span>
+            <span>Brand Identity</span><span class="text-acid">/</span>
+            <span>Storyboarding</span><span class="text-acid">/</span>
+            <span>Sound Design</span><span class="text-acid">/</span>
+            <span>Compositing</span><span class="text-acid">/</span>
+            <span>Social Strategy</span><span class="text-acid">/</span>
+          </div>
+          <div class="marquee-track-reverse flex items-center gap-6 pr-6 whitespace-nowrap font-mono text-xs md:text-sm uppercase tracking-[0.2em] text-silver" aria-hidden="true">
+            <span>Color Grading</span><span class="text-acid">/</span>
+            <span>Typography</span><span class="text-acid">/</span>
+            <span>Motion Graphics</span><span class="text-acid">/</span>
+            <span>Brand Identity</span><span class="text-acid">/</span>
+            <span>Storyboarding</span><span class="text-acid">/</span>
+            <span>Sound Design</span><span class="text-acid">/</span>
+            <span>Compositing</span><span class="text-acid">/</span>
+            <span>Social Strategy</span><span class="text-acid">/</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-10 py-24 md:py-32 border-b border-white/5">
+      <div class="mx-auto max-w-[1600px]">
+        <div class="reveal mb-16">
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-acid">How I Work</span>
+          <h2 class="font-display font-medium text-white leading-[0.95] text-[clamp(2.25rem,5vw,4.25rem)] tracking-tight mt-3">CREATIVE PROCESS</h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8 md:gap-6">
+          <div class="process-step border-t border-white/15 pt-6">
+            <span class="font-mono text-sm text-acid">01</span>
+            <h3 class="font-display text-2xl text-white mt-4">Understand</h3>
+            <p class="text-silver text-sm leading-relaxed mt-3">Start with the brief, the brand and the goal &mdash; what needs to be made, who it's for, and what it has to do once it's out in the world.</p>
+          </div>
+          <div class="process-step border-t border-white/15 pt-6">
+            <span class="font-mono text-sm text-acid">02</span>
+            <h3 class="font-display text-2xl text-white mt-4">Concept</h3>
+            <p class="text-silver text-sm leading-relaxed mt-3">Sketch directions, references and rough cuts, then narrow down to the one idea worth building properly.</p>
+          </div>
+          <div class="process-step border-t border-white/15 pt-6">
+            <span class="font-mono text-sm text-acid">03</span>
+            <h3 class="font-display text-2xl text-white mt-4">Create</h3>
+            <p class="text-silver text-sm leading-relaxed mt-3">Design, edit and refine &mdash; frame by frame, layer by layer &mdash; until the work says exactly what it needs to.</p>
+          </div>
+          <div class="process-step border-t border-white/15 pt-6">
+            <span class="font-mono text-sm text-acid">04</span>
+            <h3 class="font-display text-2xl text-white mt-4">Deliver</h3>
+            <p class="text-silver text-sm leading-relaxed mt-3">Export, format and hand off &mdash; ready to publish, in every size and spec the platform needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="px-6 md:px-10 py-24 md:py-32 border-b border-white/5 bg-matte/40">
+      <div class="mx-auto max-w-[1600px] grid md:grid-cols-2 gap-14 md:gap-20 items-center">
+        <div class="reveal order-2 md:order-1">
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-acid">About</span>
+          <h2 class="font-display font-medium text-white leading-[0.95] text-[clamp(2.25rem,5vw,4rem)] tracking-tight mt-3">BEHIND THE FRAME</h2>
+          <p class="text-silver leading-relaxed mt-6 max-w-lg">A graphic designer and video editor focused on turning ideas into visuals people actually stop for &mdash; across brand design, social content and motion.</p>
+
+          <dl class="mt-10 space-y-5 font-mono text-sm">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 max-w-md gap-6">
+              <dt class="text-silver uppercase tracking-[0.15em] text-xs">Location</dt>
+              <dd class="text-white text-right">[INSERT LOCATION]</dd>
+            </div>
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 max-w-md gap-6">
+              <dt class="text-silver uppercase tracking-[0.15em] text-xs">Experience</dt>
+              <dd class="text-white text-right">[INSERT YEARS OF EXPERIENCE]</dd>
+            </div>
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 max-w-md gap-6">
+              <dt class="text-silver uppercase tracking-[0.15em] text-xs">Email</dt>
+              <dd class="text-white text-right" data-profile-email>[INSERT EMAIL ADDRESS]</dd>
+            </div>
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 max-w-md gap-6">
+              <dt class="text-silver uppercase tracking-[0.15em] text-xs">Social</dt>
+              <dd class="flex flex-wrap justify-end gap-4" data-social-links="instagram,linkedin"></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div data-placeholder="PLACEHOLDER_ABOUT_PORTRAIT" class="reveal order-1 md:order-2 relative aspect-[4/5] rounded-2xl placeholder-frame flex items-center justify-center">
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-silver">Portrait Placeholder</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-10 py-20 md:py-28 border-b border-white/5">
+      <div class="mx-auto max-w-[1600px] grid grid-cols-2 md:grid-cols-4 gap-10">
+        <div class="reveal">
+          <span class="font-display font-medium text-[clamp(2.5rem,6vw,4.5rem)] text-white leading-none">00<span class="text-acid">+</span></span>
+          <p class="font-mono text-[11px] uppercase tracking-[0.15em] text-silver mt-3">Videos Edited</p>
+        </div>
+        <div class="reveal">
+          <span class="font-display font-medium text-[clamp(2.5rem,6vw,4.5rem)] text-white leading-none">00<span class="text-acid">+</span></span>
+          <p class="font-mono text-[11px] uppercase tracking-[0.15em] text-silver mt-3">Designs Created</p>
+        </div>
+        <div class="reveal">
+          <span class="font-display font-medium text-[clamp(2.5rem,6vw,4.5rem)] text-white leading-none">00<span class="text-acid">+</span></span>
+          <p class="font-mono text-[11px] uppercase tracking-[0.15em] text-silver mt-3">Brands Styled</p>
+        </div>
+        <div class="reveal">
+          <span class="font-display font-medium text-[clamp(2.5rem,6vw,4.5rem)] text-white leading-none">00<span class="text-acid">+</span></span>
+          <p class="font-mono text-[11px] uppercase tracking-[0.15em] text-silver mt-3">Happy Clients</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-10 py-24 md:py-32 border-b border-white/5 bg-matte/40">
+      <div class="mx-auto max-w-[1600px]">
+        <div class="reveal mb-14">
+          <span class="font-mono text-xs uppercase tracking-[0.25em] text-acid">Testimonials</span>
+          <h2 class="font-display font-medium text-white leading-[0.95] text-[clamp(2.25rem,5vw,4.25rem)] tracking-tight mt-3">CLIENT WORDS</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="reveal card-hairline rounded-xl p-8 flex flex-col justify-between min-h-[260px]">
+            <i data-lucide="quote" class="w-6 h-6 text-acid/70" aria-hidden="true"></i>
+            <p class="text-silver italic leading-relaxed mt-6">YOUR CLIENT TESTIMONIAL HERE</p>
+            <div class="mt-6 pt-6 border-t border-white/10">
+              <p class="text-white text-sm">[CLIENT NAME]</p>
+              <p class="font-mono text-[11px] uppercase tracking-[0.1em] text-silver mt-1">[CLIENT ROLE / COMPANY]</p>
+            </div>
+          </div>
+          <div class="reveal card-hairline rounded-xl p-8 flex flex-col justify-between min-h-[260px]">
+            <i data-lucide="quote" class="w-6 h-6 text-acid/70" aria-hidden="true"></i>
+            <p class="text-silver italic leading-relaxed mt-6">YOUR CLIENT TESTIMONIAL HERE</p>
+            <div class="mt-6 pt-6 border-t border-white/10">
+              <p class="text-white text-sm">[CLIENT NAME]</p>
+              <p class="font-mono text-[11px] uppercase tracking-[0.1em] text-silver mt-1">[CLIENT ROLE / COMPANY]</p>
+            </div>
+          </div>
+          <div class="reveal card-hairline rounded-xl p-8 flex flex-col justify-between min-h-[260px]">
+            <i data-lucide="quote" class="w-6 h-6 text-acid/70" aria-hidden="true"></i>
+            <p class="text-silver italic leading-relaxed mt-6">YOUR CLIENT TESTIMONIAL HERE</p>
+            <div class="mt-6 pt-6 border-t border-white/10">
+              <p class="text-white text-sm">[CLIENT NAME]</p>
+              <p class="font-mono text-[11px] uppercase tracking-[0.1em] text-silver mt-1">[CLIENT ROLE / COMPANY]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-6 md:px-10 py-24 md:py-32 border-b border-white/5">
+      <div class="mx-auto max-w-[1600px] grid lg:grid-cols-2 gap-16">
+        <div class="reveal">
+          <h2 class="font-display font-medium text-white leading-[0.95] text-[clamp(2.5rem,7vw,5.5rem)] tracking-tight">
+            HAVE A PROJECT<br>IN MIND?
+          </h2>
+          <p class="font-display font-medium text-acid text-[clamp(1.5rem,3.5vw,2.5rem)] tracking-tight mt-2">
+            Let's create something worth watching.
+          </p>
+
+          <div class="mt-10 flex flex-col gap-4">
+            <a href="mailto:kanahiyaojha3@gmail.com" class="cursor-hover inline-flex items-center gap-3 text-white hover:text-acid transition-colors w-fit" data-contact-email>
+              <i data-lucide="mail" class="w-5 h-5" aria-hidden="true"></i>
+              <span>[INSERT EMAIL ADDRESS]</span>
+            </a>
+            <div class="flex flex-wrap gap-6 font-mono text-xs uppercase tracking-[0.15em] text-silver mt-2" data-social-links="instagram,linkedin"></div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="reveal flex flex-col gap-5" novalidate>
+          <div>
+            <label for="cf-name" class="font-mono text-[11px] uppercase tracking-[0.15em] text-silver">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Your name" class="cursor-hover mt-2 w-full border-b border-white/20 py-3 text-white focus:border-acid transition-colors" aria-describedby="cf-name-error">
+            <p id="cf-name-error" class="form-error hidden" aria-live="polite"></p>
+          </div>
+          <div>
+            <label for="cf-email" class="font-mono text-[11px] uppercase tracking-[0.15em] text-silver">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="you@email.com" class="cursor-hover mt-2 w-full border-b border-white/20 py-3 text-white focus:border-acid transition-colors" aria-describedby="cf-email-error">
+            <p id="cf-email-error" class="form-error hidden" aria-live="polite"></p>
+          </div>
+          <div>
+            <label for="cf-type" class="font-mono text-[11px] uppercase tracking-[0.15em] text-silver">Project Type</label>
+            <select id="cf-type" name="projectType" required class="cursor-hover mt-2 w-full border-b border-white/20 py-3 text-white focus:border-acid transition-colors" aria-describedby="cf-type-error">
+              <option value="" disabled selected class="bg-obsidian">Select an option</option>
+              <option value="Graphic Design" class="bg-obsidian">Graphic Design</option>
+              <option value="Video Editing" class="bg-obsidian">Video Editing</option>
+              <option value="Social Media" class="bg-obsidian">Social Media</option>
+              <option value="Branding" class="bg-obsidian">Branding</option>
+              <option value="Motion Graphics" class="bg-obsidian">Motion Graphics</option>
+              <option value="Other" class="bg-obsidian">Other</option>
+            </select>
+            <p id="cf-type-error" class="form-error hidden" aria-live="polite"></p>
+          </div>
+          <div>
+            <label for="cf-message" class="font-mono text-[11px] uppercase tracking-[0.15em] text-silver">Message</label>
+            <textarea id="cf-message" name="message" required minlength="10" rows="4" placeholder="Tell me about your project" class="cursor-hover mt-2 w-full border-b border-white/20 py-3 text-white focus:border-acid transition-colors resize-none" aria-describedby="cf-message-error"></textarea>
+            <p id="cf-message-error" class="form-error hidden" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="cursor-hover btn-glow mt-3 inline-flex w-fit items-center gap-2 bg-acid text-obsidian font-mono text-xs font-medium uppercase tracking-[0.15em] px-8 py-4 rounded-full hover:opacity-90 transition-opacity">
+            Send Message <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i>
+          </button>
+          <p id="formStatus" class="hidden font-mono text-xs" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-6 md:px-10 py-10">
+    <div class="mx-auto max-w-[1600px] flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="text-center md:text-left">
+        <p class="font-display text-white">AJEET OJHA</p>
+        <p class="font-mono text-[11px] uppercase tracking-[0.15em] text-silver mt-1">Graphic Designer / Video Editor &mdash; &copy; 2026</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 font-mono text-xs uppercase tracking-[0.15em] text-silver" data-social-links="instagram,linkedin"></div>
+    </div>
+  </footer>
+
+  <button id="backToTop" type="button" aria-label="Back to top" class="cursor-hover fixed bottom-6 right-6 z-30 w-12 h-12 rounded-full border border-white/15 bg-obsidian/80 backdrop-blur flex items-center justify-center text-white opacity-0 pointer-events-none transition-opacity duration-300 hover:border-acid hover:text-acid">
+    <i data-lucide="arrow-up" class="w-5 h-5" aria-hidden="true"></i>
+  </button>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

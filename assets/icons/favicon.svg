@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AO favicon">
+  <rect width="64" height="64" rx="12" fill="#050505"/>
+  <path d="M12 48 27 14h10l15 34H41l-2.5-6.5h-14L22 48H12Zm15.5-14.5h8L31.5 23l-4 10.5Z" fill="#ccff00"/>
+  <circle cx="49" cy="19" r="7" fill="none" stroke="#ccff00" stroke-width="4"/>
+</svg>
